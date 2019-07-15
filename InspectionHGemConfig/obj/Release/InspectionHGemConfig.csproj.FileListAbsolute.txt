@@ -1,0 +1,5 @@
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\bin\Release\InspectionHGemConfig.exe.config
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\bin\Release\InspectionHGemConfig.exe
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\bin\Release\InspectionHGemConfig.pdb
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\obj\Release\InspectionHGemConfig.exe
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\obj\Release\InspectionHGemConfig.pdb

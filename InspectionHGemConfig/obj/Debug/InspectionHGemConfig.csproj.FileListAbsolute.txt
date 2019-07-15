@@ -1,0 +1,6 @@
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\bin\Debug\InspectionHGemConfig.exe.config
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\bin\Debug\InspectionHGemConfig.exe
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\bin\Debug\InspectionHGemConfig.pdb
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\obj\Debug\InspectionHGemConfig.csprojResolveAssemblyReference.cache
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\obj\Debug\InspectionHGemConfig.exe
+c:\users\hans\documents\visual studio 2013\Projects\InspectionHGemConfig\InspectionHGemConfig\obj\Debug\InspectionHGemConfig.pdb
