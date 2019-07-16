@@ -2,3 +2,4 @@
 *.pdb
 Convert2HGemConfig_2.0.csproj.FileListAbsolute.txt
 *.cache
+*.suo
