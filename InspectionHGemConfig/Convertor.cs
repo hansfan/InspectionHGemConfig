@@ -82,7 +82,7 @@ namespace InspectionHGemConfig
         private List<string> linkString = new List<string>();
         private List<string> alarmString = new List<string>();
         private List<string> ecString = new List<string>();
-        
+
 
         public Convertor()
         {
@@ -106,32 +106,32 @@ namespace InspectionHGemConfig
         public List<List<string>> Process(List<string> list)
         {
             HGemConfigFormat outputStream = new HGemConfigFormat();
-             List<List<string>> total = new List<List<string>>();
+            List<List<string>> total = new List<List<string>>();
             try
             {
                 foreach (string tmp in list)
                 {
                     string[] arraySplit = tmp.Split(',');
-                    string category = arraySplit[0];
+                    string category = arraySplit[0].Trim();
 
-                    if (category.ToUpper().IndexOf(Standard.key4EC) >= 0)
+                    if (category.ToUpper().IndexOf(Standard.key4EC) == 0)
                     {
                         ecString.Add(outputStream.outputEC(tmp));
                     }
-                    else if (category.ToUpper().IndexOf(Standard.key4Vid) >= 0)
+                    else if (category.ToUpper().IndexOf(Standard.key4Vid) == 0)
                     {
                         vidString.Add(outputStream.outputVid(tmp));
                     }
-                    else if (category.ToUpper().IndexOf(Standard.key4Event) >= 0)
+                    else if (category.ToUpper().IndexOf(Standard.key4Event) == 0)
                     {
                         eventString.Add(outputStream.outputEvent(tmp));
                     }
-                    else if (category.ToUpper().IndexOf(Standard.key4Link) >= 0)
+                    else if (category.ToUpper().IndexOf(Standard.key4Link) == 0)
                     {
                         linkString.Add(outputStream.outputReportLink(tmp));
 
                     }
-                    else if (category.ToUpper().IndexOf(Standard.key4Report) >= 0)
+                    else if (category.ToUpper().IndexOf(Standard.key4Report) == 0)
                     {
                         reportString.Add(outputStream.outputReport(tmp));
                     }
