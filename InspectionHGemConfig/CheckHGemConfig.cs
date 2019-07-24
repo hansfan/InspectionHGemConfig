@@ -65,19 +65,28 @@ namespace InspectionHGemConfig
                                 break;
                             case "report":
                                 string[] vidValues = data.VALUE.Split(',');
+                                string tagVids = string.Empty;
                                 if (!reportList.Contains(data.ID))
                                 {
                                     reportList.Add(data.ID);
                                 }
+                                
                                 foreach (string value in vidValues)
                                 {
 
                                     if (!vidList.Contains(value))
                                     {
-                                        tmp = ";;;;;;;;" + tmp;
-                                        break;
+                                        tagVids +=  value + ";";
+                                       
+                                        //reportList.Remove(data.ID);
+                                       
                                     }
                                 }
+                                if (tagVids != string.Empty)
+                                {
+                                     tmp = ";;;;;;;;" + tmp +";" +tagVids ;
+                                }
+
                                 result.AppendLine(tmp);
 
                                 break;
@@ -174,9 +183,9 @@ namespace InspectionHGemConfig
 
             string[] id = arr[0].Split('=');
             data.ID = id[1];
-
+            
             data.VALUE = arr[1];
-
+            data.CATEGORY = "reportlink";
 
             return data;
         }

@@ -62,7 +62,11 @@ namespace InspectionHGemConfig
 
                     while (reader.Peek() >= 0)
                     {
-                        list.Add(reader.ReadLine());
+                        string tmp = reader.ReadLine();
+
+                        list.Add(tmp);
+
+
                     }
 
                 }

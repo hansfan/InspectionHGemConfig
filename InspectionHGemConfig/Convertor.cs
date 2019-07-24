@@ -82,7 +82,7 @@ namespace InspectionHGemConfig
         private List<string> linkString = new List<string>();
         private List<string> alarmString = new List<string>();
         private List<string> ecString = new List<string>();
-
+        
 
         public Convertor()
         {
@@ -106,13 +106,13 @@ namespace InspectionHGemConfig
         public List<List<string>> Process(List<string> list)
         {
             HGemConfigFormat outputStream = new HGemConfigFormat();
-            List<List<string>> total = new List<List<string>>();
+             List<List<string>> total = new List<List<string>>();
             try
             {
                 foreach (string tmp in list)
                 {
                     string[] arraySplit = tmp.Split(',');
-                    string category = arraySplit[0].Trim();
+                    string category = arraySplit[0];
 
                     if (category.ToUpper().IndexOf(Standard.key4EC) == 0)
                     {
