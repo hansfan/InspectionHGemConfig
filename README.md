@@ -1,4 +1,4 @@
-Check format of configuration file 
+※Check format of configuration file 
 
 Example:
 
